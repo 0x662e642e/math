@@ -1,0 +1,82 @@
+Padrão
+======
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+Variáveis
+=========
+- São casesensitives;
+- Não podem conter espaços em seus nomes;
+- Deve iniciar com letras ou sublinhados;
+- Pode conter letras, números e sublinhados;
+- Atribuição de valor: variavel = dado
+
+Tipos
+=====
+int	inteiro		3
+float	real		3.14
+string	caractere	'3.14' ou "3.14"
+
+Comentários
+===========
+#1 ou 1/2 linha
+"""Múltiplas linhas"""
+
+Indentação
+==========
+Indica a que estrutura pertence o trecho de código
+
+Saída de dados
+==============
+print()
+
+Importando bibliotecas
+======================
+import biblioteca
+from biblioteca import funcao
+from biblioteca import funcao as fn
+
+Bibliotecas matematicas
+=======================
+numpy		computação científica
+math		funções matemáticas
+fraction	manipulação de frações
+sympy		matemática simbólica
+pylab		gráficos 2D
+matplotlib	figuras e gráficos
+cmath		números complexos
+
+Operadores e precedência
+========================
+()		parênteses
+**		potência
+* / // %	multiplicação, divisão, divisão (parte inteira), módulo
+
+Funções
+=======
+pow(base,expoente)	potência
+floor()			trunca para a base
+ceil()			arredonda para o topo
+round()			arrendonda para o valor mais próximo
+
+Polinômios
+==========
+[9, 2, 5] = [9x^2 + 2x + 5]
+polyadd()	adição 		(numpy)
+polysub		subtração 	(numpy)
+polymul()	multiplicação 	(numpy)
+polydiv()	divisão 	(numpy)
+factor()	fatoração 	(sympy)
+
+Exemplos:
+	>>> var1 = [4, 5, 9]; var2 = [6, 7, 2]
+	from numpy import polymul as pm; pm(var1, var2)
+
+	>>> from sympy.abc import x
+	>>> from sympy import factor as fc ; fc(x**3 + x**2 - 9*x)
+
+Matriz
+======
+.shape		retorna o tamanho da matriz
+>>> import numpy; numpy.matrix('1,2; 3,4')
+>>> from numpy import matrix as np; np([[1,2], [3,4]])
